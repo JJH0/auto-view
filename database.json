@@ -1,0 +1,79 @@
+{
+  "__ffff_127_0_0_1": {
+    "level": 2,
+    "xp": 135,
+    "coins": 35,
+    "lastCheckIn": null,
+    "inventory": {
+      "seeds": {
+        "carrot": 2,
+        "corn": 0
+      }
+    },
+    "plots": [
+      {
+        "id": 0,
+        "locked": false,
+        "crop": {
+          "type": "carrot",
+          "progress": 3,
+          "water": 98.5
+        }
+      },
+      {
+        "id": 1,
+        "locked": false,
+        "crop": {
+          "type": "corn",
+          "progress": 2,
+          "water": 99
+        }
+      },
+      {
+        "id": 2,
+        "locked": false,
+        "crop": {
+          "type": "corn",
+          "progress": 1,
+          "water": 99.5
+        }
+      },
+      {
+        "id": 3,
+        "locked": true,
+        "crop": null
+      },
+      {
+        "id": 4,
+        "locked": true,
+        "crop": null
+      },
+      {
+        "id": 5,
+        "locked": true,
+        "crop": null
+      },
+      {
+        "id": 6,
+        "locked": true,
+        "crop": null
+      },
+      {
+        "id": 7,
+        "locked": true,
+        "crop": null
+      },
+      {
+        "id": 8,
+        "locked": true,
+        "crop": null
+      }
+    ],
+    "pet": {
+      "stage": 1,
+      "love": 105,
+      "hunger": 79.79999999999986,
+      "lastInteraction": 1767160399191
+    }
+  }
+}
