@@ -1,4 +1,0 @@
-interface:
-  display_name: "GitHub Repo Publish"
-  short_description: "Bind a local project to GitHub and push safely."
-  default_prompt: "Use $github-repo-publish to initialize this project as a git repo, bind it to a GitHub repository, and push the current branch."
