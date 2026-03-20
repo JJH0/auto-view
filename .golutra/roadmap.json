@@ -1,0 +1,34 @@
+{
+  "_roadmapMeta": {
+    "updatedAt": 1773901978994
+  },
+  "roadmap": {
+    "objective": "火狐浏览器自动滚动插件 - 悬浮框交互改进",
+    "tasks": [
+      {
+        "id": 1,
+        "number": "01",
+        "pinned": true,
+        "sortOrder": 1,
+        "status": "pending",
+        "title": "实现悬浮框半球形态及边框吸附"
+      },
+      {
+        "id": 2,
+        "number": "02",
+        "pinned": true,
+        "sortOrder": 2,
+        "status": "pending",
+        "title": "实现长按拖动及松开自动贴边功能"
+      },
+      {
+        "id": 3,
+        "number": "03",
+        "pinned": false,
+        "sortOrder": 3,
+        "status": "pending",
+        "title": "优化动画过渡效果"
+      }
+    ]
+  }
+}
