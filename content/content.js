@@ -203,7 +203,9 @@
     currentSpeed: "medium",
     rafId: 0,
     lastFrameTime: 0,
-    statusTimer: 0
+    statusTimer: 0,
+    bottomReachedAt: 0,
+    lastScrollHeight: 0
   };
 
   function showStatus(message) {
@@ -272,9 +274,24 @@
     });
 
     if (window.scrollY >= limit - 1) {
-      stopAutoScroll("Reached page bottom");
+      const scrollingElement = document.scrollingElement || document.documentElement;
+      const currentHeight = scrollingElement.scrollHeight;
+      if (state.bottomReachedAt === 0) {
+        state.bottomReachedAt = timestamp;
+        state.lastScrollHeight = currentHeight;
+      } else if (currentHeight > state.lastScrollHeight) {
+        state.bottomReachedAt = 0;
+        state.lastScrollHeight = 0;
+      } else if (timestamp - state.bottomReachedAt >= 4000) {
+        state.bottomReachedAt = 0;
+        stopAutoScroll("Reached page bottom");
+        return;
+      }
+      state.rafId = window.requestAnimationFrame(tick);
       return;
     }
+    state.bottomReachedAt = 0;
+    state.lastScrollHeight = 0;
 
     state.rafId = window.requestAnimationFrame(tick);
   }
